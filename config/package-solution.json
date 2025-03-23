@@ -1,0 +1,154 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "testgroups-client-side-solution",
+    "id": "eb47113c-dcfc-4bda-9ec5-9c18d19e3076",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "testgroups description"
+      },
+      "longDescription": {
+        "default": "testgroups description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "testgroups Feature",
+        "description": "The feature that activates elements of the testgroups solution.",
+        "id": "1c7abd09-4fce-44e5-a02b-617f82af2b0c",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Application.ReadWrite.All"
+      }, 
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Channel.ReadBasic.All"
+      },       
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChannelMember.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChannelMember.Read.All"
+      },                   
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChannelMessage.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChannelMessage.Send"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Chat.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChatMember.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChatMember.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChatMessage.Send"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Directory.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Directory.ReadWrite.All"
+      },                      
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.Read.All"
+      },      
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "GroupMember.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Presence.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Team.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Team.ReadBasic.All"
+      },            
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TeamMember.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TeamMember.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TeamMember.ReadWriteNonOwnerRole.All"
+      },      
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TeamsAppInstallation.ReadForUser"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TeamworkTag.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TeamworkTag.ReadWrite"
+      },        
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadBasic.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      }      
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/testgroups.sppkg"
+  }
+}
