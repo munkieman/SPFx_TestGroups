@@ -15,8 +15,14 @@ interface IMember {
   displayName: string;
 }
 
-const teamID = "5d3e8ded-4c9f-4bdc-919f-a34ce322caeb";
-const teamName = "TestChat";
+// *** Dev Tenant ***
+//const teamID = "5d3e8ded-4c9f-4bdc-919f-a34ce322caeb";
+//const teamName = "TestChat";
+
+// *** Production Tenant ***
+const teamID = "68d9eb2c-06f7-40ed-bd99-a5a35fab0275";
+const teamName = "ExpensesChat";
+
 const channelName = "General";
 
 const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
@@ -53,7 +59,7 @@ const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
       });
   };
 
-  const fetchChannelMembers = async () => {
+  const fetchChannelMembers = async () : Promise<void> => {
     try {
       setLoading(true);
 
@@ -81,7 +87,7 @@ const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
       if (!channel) throw new Error(`Channel "${channelName}" not found`);
 
       // Get channel members
-      const membersResponse = await client.api(`/teams/${team.id}/channels/${channel.id}/members`)
+      const membersResponse = await client.api(`/teams/${team.id}/members`)
         .version('v1.0')
         .get();
 
@@ -96,7 +102,7 @@ const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
     return;
   };
 
-  const sendMessageToTeams = async (message: string) => {
+  const sendMessageToTeams = async (message: string): Promise<void> => {
     try {
       const client = await context.msGraphClientFactory.getClient('3');
   
@@ -175,7 +181,7 @@ const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
     return;
   };
 
-  const checkMember = async () => { 
+  const checkMember = async () : Promise<void> => { 
     try {
       const client = await context.msGraphClientFactory.getClient('3');
       const tokenProvider = await context.aadTokenProviderFactory.getTokenProvider();

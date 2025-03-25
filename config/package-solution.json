@@ -76,6 +76,14 @@
       },
       {
         "resource": "Microsoft Graph",
+        "scope": "Device.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "DeviceManagementApps.Read.All"
+      },       
+      {
+        "resource": "Microsoft Graph",
         "scope": "Directory.Read.All"
       },
       {
