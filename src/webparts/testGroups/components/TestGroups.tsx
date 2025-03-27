@@ -91,7 +91,7 @@ const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
       if (!channel) throw new Error(`Channel "${channelName}" not found`);
 
       // Get channel members
-      const membersResponse = await client.api(`/teams/${team.id}/channels/${channel.id}/members`)
+      const membersResponse = await client.api(`/teams/${team.id}/members`)
         .version('v1.0')
         .get();
 
