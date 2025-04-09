@@ -19,12 +19,16 @@ interface IMember {
 //const teamID = "5d3e8ded-4c9f-4bdc-919f-a34ce322caeb";
 //const teamName = "TestChat";
 
+//Max Dev Team
+const teamID = "696dfe67-e76f-4bf8-8ab6-8abfcb16552e";
+const teamName = "TestChat";  
+
 // Max Prod Team
 //https://teams.microsoft.com/l/team/19%3AwREFwWCHiIj-qfeAUqedf6wIatZTFqg0CgOwMN6CQxc1%40thread.tacv2/conversations?groupId=a3cce0fc-52f7-4928-8f2b-14102e5ad6ca&tenantId=5074b8cc-1608-4b41-aafd-2662dd5f9bfb
 //https://teams.microsoft.com/l/channel/19%3AwREFwWCHiIj-qfeAUqedf6wIatZTFqg0CgOwMN6CQxc1%40thread.tacv2/General?groupId=a3cce0fc-52f7-4928-8f2b-14102e5ad6ca&tenantId=5074b8cc-1608-4b41-aafd-2662dd5f9bfb
 //https://teams.microsoft.com/l/channel/19%3AWELxtb3PBurFUqD2tVetv08tqw2FzQqvWFIqgi3XO5E1%40thread.tacv2/General?groupId=68d9eb2c-06f7-40ed-bd99-a5a35fab0275&tenantId=5074b8cc-1608-4b41-aafd-2662dd5f9bfb
-const teamID = "68d9eb2c-06f7-40ed-bd99-a5a35fab0275";
-const teamName = "Teams Testing";  
+//const teamID = "68d9eb2c-06f7-40ed-bd99-a5a35fab0275";
+//const teamName = "Teams Testing";  
 
 const channelName = "General";
 
@@ -279,10 +283,10 @@ const TestGroups: React.FunctionComponent<ITestGroupsProps> = (props) => {
     return;
   };
 
-  useEffect(() => {
-    getTeamTags();
+  useEffect(() => {    
     fetchChannelMembers();
     checkMember();
+    getTeamTags();
     console.log("Member check completed."); 
       
       // 🔥 Post message to Teams channel
